@@ -44,6 +44,10 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "include": [
+    "test",
+    "pages"
+  ]
   
 }
