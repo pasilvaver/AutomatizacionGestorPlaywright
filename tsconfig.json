@@ -10,7 +10,7 @@
     "module": "CommonJS",   
     "target": "ESNext", 
     "moduleResolution": "node",
-    "types": ["@playwright/test"],
+    "types": ["node", "@playwright/test"],
     "esModuleInterop": true,
        
     

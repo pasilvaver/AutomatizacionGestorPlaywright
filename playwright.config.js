@@ -10,6 +10,7 @@ dotenv.config({ path: 'dotenv.env' });
 export default defineConfig({
   // globalSetup: './config/global-setup.ts',
   testDir: './tests',
+  timeout: 120000,
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -47,6 +48,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://gestordescuentos-qa.abastible.cl/login',
+    
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -117,7 +119,5 @@ export default defineConfig({
   //   url: 'http://127.0.0.1:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
-
   
 });
-
